@@ -54,9 +54,9 @@
         var rect = el.getBoundingClientRect();
 
         return (
-            rect.top >= 0 &&
+            rect.top >= 90 &&
                 rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.bottom <= (window.innerHeight - 100 || document.documentElement.clientHeight - 100) &&
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
     }
