@@ -6,9 +6,9 @@
  * 
  */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
-@import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Volkhov:400italic);
 /* var text-decoration */
 /*--
 	Common Css
@@ -74,6 +74,9 @@ header .navbar {
 }
 header .navbar-brand {
   padding-top: 5px;
+}
+header .navbar-brand img {
+  height: 50px;
 }
 header .navbar-default {
   background: none;
@@ -231,7 +234,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Feature Start
 --*/
 #feature {
-  background: url("../img/featue-bg.jpg");
+  background: url("../img/sd.jpg");
   background-position: 50% 94px;
   width: 100%;
   display: block;
