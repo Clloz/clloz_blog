@@ -39,14 +39,17 @@
 }
 
 .ritsu-left {
-    height: 300px;
+    height: 200px;
     float: left;
     margin-top: 200px;
-    margin-left: -350px;
+    margin-left: -250px;
 }
-
+.ritsu-right {
+    height: 430px;
+    margin-top: 150px;
+}
 .ritsu-lg {
-    height: 400px;
+    height: 250px;
 }
 
 #global-header .block {
