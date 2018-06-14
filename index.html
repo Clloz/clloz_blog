@@ -47,21 +47,21 @@ permalink: /
 </section>
 
 <section id="feature">
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-6">
-      <h2>最新文章</h2>
-      <p>一些自己感兴趣的东西的随意吐槽 </p>
-      {% for post in site.posts limit:5 %}
-      <div class="post-dash">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-title">{{ post.title }}</a>
-        <p class="post-info">posted by {{post.author}} on {{ post.date | date_to_long_string }}</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-6">
+        <h2>最新文章</h2>
+        <p>一些自己感兴趣的东西的随意吐槽 </p>
+        {% for post in site.posts limit:5 %}
+        <div class="post-dash">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-title">{{ post.title }}</a>
+          <p class="post-info">posted by {{post.author}} on {{ post.date | date_to_long_string }}</p>
+        </div>
+        {% endfor %}
+        <a href="{{ site.baseurl }}/blog" class="btn btn-view-works">更多</a>
       </div>
-      {% endfor %}
-      <a href="{{ site.baseurl }}/blog" class="btn btn-view-works">更多</a>
     </div>
   </div>
-</div>
 </section>
 <!-- Call to action Start -->
 <section id="call-to-action">
