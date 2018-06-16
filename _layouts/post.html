@@ -24,19 +24,29 @@ layout: page
     <div class="container">
       <div class="row">
         <div>
-          <div class="block">
+          <img class="blog-akane" src="{{ site.baseurl }}/img/rannma.jpg" alt="img">
+          <div class="block col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <h1>{{ page.title }}</h1>
             <div class="post-info-wrapper">
-              <p class="italic">By <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date | date: "%B %-d, %Y" }}</span></p>
+              <p class="italic">By <span>{{ page.author }}</span> on <span>{{ page.date | date: "%B %-d, %Y" }}</span></p>
             </div>
             <hr />
             <p>{{ content }}</p>
+            <ul class="pager">       
+              <li class="previous">
+                  <a href="/2016/09/05/NingJS-JSConf-China-2016/" data-toggle="tooltip" data-placement="top" title="" data-original-title="NingJS · JSConf China · 2016">← Previous Post</a>
+              </li>
+              <li class="next">
+                  <a href="/2016/06/28/Xie_Gei_Zi_Ji/" data-toggle="tooltip" data-placement="top" title="" data-original-title="写给自己">Next Post →</a>
+              </li>
+            </ul>
           </div>
         </div><!-- .col-md-7 close -->
       </div>
     </div>
   </section>
 </div>
-<p class="center-text" style="padding: 30px;">
-  <a href="{{ site.baseurl }}/blog">Back to blog</a>
-</p>
+<!-- <p class="center-text" style="padding: 30px;">
+  <a class="link-btn" href="{{ site.baseurl }}/blog">Back to blog</a>
+</p> -->
+

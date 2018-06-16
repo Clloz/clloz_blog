@@ -1,3 +1,10 @@
+body {
+    font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    line-height: 1.7;
+	font-size: 16px;
+	color: #404040;
+	overflow-x: hidden
+}
 .post-dash .post-info, .post-area .post-info{
     font-family: 'Volkhov', serif;
     font-style: italic;
@@ -15,7 +22,7 @@
 .post-area p:first-of-type {
     margin-top: 20px;
 }
-.post-area p:nth-last-child(1) {
+.post-area > p:nth-last-child(1) {
     text-align: right;
 }
 .sns a {
@@ -61,7 +68,7 @@
 }
 
 .intro p {
-    font-family: 'Volkhov', serif;
+    /* font-family: 'Volkhov', serif; */
     font-style: italic;
     font-size: 20px;
 }
@@ -72,4 +79,104 @@
 .intro img {
     width: 100%;
     margin-top: 30px;
+}
+
+#intro .block p {
+    color: #404040;
+}
+
+.post-area p {
+    font-style: italic;
+    /* color: #a3a3a3; */
+    color: #4371b9;
+    font-size: 14px;
+}
+
+.post-area a p:hover, .post-area a h2:hover {
+    color: #bf4242;
+    cursor: pointer;
+}
+
+
+
+.post-info-wrapper {
+    font-family: 'Volkhov', serif;
+    font-style: italic;
+    color: #666;
+    font-size: 16px;
+}
+
+.blog-akane {
+    float: left;
+    height: 240px;
+    margin-left: -200px;
+    margin-top: 100px;
+}
+
+.nav-head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255,255,255,0.9);
+    border-bottom: 1px solid transparent;
+    /* background-color: initial; */
+}
+
+
+
+@media only screen and (min-width: 1170px) {
+    .nav-head {
+        -webkit-transition: background-color .3s;
+        -moz-transition: background-color .3s;
+        transition: background-color .3s;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .nav-head.is-visible {
+        -webkit-transform: translate3d(0,100%,0);
+        -moz-transform: translate3d(0,100%,0);
+        -ms-transform: translate3d(0,100%,0);
+        -o-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+    
+    .nav-head.is-fixed {
+        position: fixed;
+        top: -71px;
+        background-color: rgba(255,255,255,.9);
+        border-bottom: 1px solid #f2f2f2;
+        -webkit-transition: -webkit-transform .3s;
+        -moz-transition: -moz-transform .3s;
+        transition: transform .3s;
+        border-bottom: 1px solid #f2f2f2;
+    }
+}
+
+.pager li>a {
+    display: inline-block;
+    font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    line-height: 1.7;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 15px 25px;
+    background-color: #fff;
+    border-radius: 0;
+    border: 1px solid #ddd;
+    color: #404040;
+}
+
+@media only screen and (min-width: 768px){
+    .pager li>a, .pager li>span {
+        font-size: 14px;
+        padding: 15px 25px;
+    }
 }

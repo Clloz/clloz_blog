@@ -14,7 +14,7 @@
 	Common Css
 --*/
 body {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
 }
 h2 {
   font-size: 30px;
@@ -57,7 +57,7 @@ a:active {
   /* font-weight: 600; */
 }
 .section-title p {
-  font-family: 'Volkhov', serif;
+  /* font-family: 'Volkhov', serif; */
   font-style: italic;
   color: #666;
 }
@@ -66,14 +66,14 @@ a:active {
 --*/
 header {
   background: #fff;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 header .navbar {
   margin-bottom: 0px;
   border: 0px;
 }
 header .navbar-brand {
-  padding-top: 5px;
+  padding: 0px;
 }
 header .navbar-brand img {
   height: 50px;
@@ -89,7 +89,13 @@ header .navbar-default .navbar-nav li a {
   color: #333333;
   padding: 10px 26px;
   font-size: 15px;
+  font-weight: 800;
 }
+
+header .navbar-default .navbar-nav li a:hover {
+  color: #9d57d0;
+}
+
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
 }
@@ -123,7 +129,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #E3E3E4;
 }
 #slider .block h1 {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   font-weight: 100;
   font-size: 45px;
   line-height: 60px;
@@ -133,7 +139,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #slider .block p {
   font-size: 23px;
   line-height: 40px;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   font-weight: 300;
   letter-spacing: 3px;
 }
@@ -151,12 +157,12 @@ font header .navbar-default .navbar-nav li a:hover {
 #intro .block p {
   color: #7B7B7B;
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 16px;
 }
 #intro .block img {
-  margin-top: -100px;
+  margin: 20px;
   padding-left: 40px;
-  width: 100%;
+  max-width: 450px;
 }
 #intro .section-title {
   margin-bottom: 0px;
@@ -636,7 +642,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-left: 90px;
 }
 #slider-contact .block h1 {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   font-weight: 100;
   font-size: 45px;
   line-height: 60px;
@@ -646,7 +652,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #slider-contact .block p {
   font-size: 23px;
   line-height: 40px;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   font-weight: 300;
   letter-spacing: 1px;
   word-spacing: 3px;
@@ -686,7 +692,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background: #47424C;
   border: none;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   font-size: 18px;
 }
 /*--
@@ -731,7 +737,7 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 100%;
 }
 #contact-box .block h2 {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   font-weight: 300;
   color: #000;
   font-size: 28px;
