@@ -5,7 +5,8 @@ header-img: ""
 tagline: "cn"  
 description: "Clloz sisi"  
 baseurl: ""
-url: "http://cnfeat"  
+url: "http://cnfeat"
+excerpt_separator:  <!-- more -->  
 
 # About/contact
 owner: 
@@ -61,3 +62,4 @@ google_verify:
 bing_verify:
 
 # Links to include in footer navigation
+
