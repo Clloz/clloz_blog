@@ -180,3 +180,71 @@ body {
         padding: 15px 25px;
     }
 }
+
+.dialog-usa, .dialog-ritsu {
+    min-height: 39px;
+    width: 160px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dialog-usa {
+    position: absolute;
+    top: 330px;
+    right: -140px;
+}
+
+.dialog-ritsu {
+    position: absolute;
+    top: 230px;
+    right: -80px;
+}
+
+.dialog-usa:before, .dialog-ritsu:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: -10px;
+    top: 5px;
+    border-right: 10px solid #000;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.dialog-usa:after, .dialog-ritsu:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: -7px;
+    top: 7px;
+    border-right: 8px solid #fff;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+.dialog-usa p, .dialog-ritsu p {
+    line-height: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+}
+
+.anim_fade_image{
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+.anim_fade_image_hover {
+    opacity:0;
+    filter: alpha(opacity=0);
+}
+
+.catelog {
+    display: none;
+    position:fixed;
+}

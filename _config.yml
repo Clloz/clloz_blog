@@ -4,7 +4,7 @@ title: Clloz's Dream House
 header-img: ""
 tagline: "cn"  
 description: "Clloz sisi"  
-baseurl: ""
+baseurl: "/clloz_blog"
 url: "http://cnfeat"
 excerpt_separator:  <!-- more -->  
 
@@ -29,7 +29,8 @@ bilibili: clloz
 # document: http://jekyllrb.com/docs/configuration/#kramdown  
 markdown: kramdown
 highlighter: rouge
-permalink: pretty
+# permalink: pretty
+permalink: /:categories/:title
 paginate: 8
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
